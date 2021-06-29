@@ -1,0 +1,61 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb-base"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12
+    },
+    "rules": {
+        "no-console": 0,
+        "indent": [
+            "error",
+            4
+        ],
+        "semi": [
+            2,
+            "never"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "eqeqeq": "error",
+        "no-var": "error",
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "linebreak-style": 0,
+        // "linebreak-style": [
+        //     "error",
+        //     "windows"
+        // ]
+        "object-shorthand": [
+            "error",
+            "always"
+        ],
+        //define number of characters in one line
+        "max-len": [
+            "error",
+            {
+                "code": 120
+            }
+        ],
+        //configure curly braces to not appear on new line for destructred object
+        "object-curly-newline": [
+            "error",
+            {
+                "ObjectPattern": {
+                    "multiline": true
+                }
+            }
+        ],
+        "camelcase": 0,
+        "nonblock-statement-body-position": "any"
+    }
+}
